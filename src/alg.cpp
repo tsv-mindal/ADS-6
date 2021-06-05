@@ -6,7 +6,6 @@
 #include  "bst.h"
 
 BST<std::string> makeTree(const char* filename) {
-  // поместите сюда свой код
 BST<std::string>tree;
     std::string word = "";
     char lowercase = 'a' - 'A';
