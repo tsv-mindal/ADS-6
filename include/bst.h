@@ -4,14 +4,15 @@
 #include <cassert>
 
 template <typename T>
-class BST {
-public:
+class BST {  
+  public:
   struct Node {
     T value;
     int count;
     Node* left;
     Node* right;
   };
+  
  private:
   Node* root;
   Node* addNode(Node* root, T value) {
@@ -47,6 +48,7 @@ public:
     else
       return root->count;
   }
+  
  public:
   BST() :root(nullptr) {}
   ~BST() {}
